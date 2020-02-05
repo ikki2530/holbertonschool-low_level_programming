@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- *main - Prints hello world
+ * main - Prints hello world
  *
- *Return: return 0
+ * Return: return 0
  */
-int main()
+int main(void)
 {
   printf("with proper grammar, but the outcome is a piece of art,");
   return(0);
