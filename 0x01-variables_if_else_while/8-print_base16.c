@@ -14,6 +14,7 @@ int main(void)
 			putchar(i);
 		else if (i > 96)
 			putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
