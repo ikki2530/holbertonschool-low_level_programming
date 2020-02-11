@@ -16,6 +16,9 @@ int _islower(int c);
 /*This prototype check if a char is a letter*/
 int _isalpha(int c);
 
+/*This prototype check the sign of the value input*/
+int print_sign(int n);
+
 
 
 
