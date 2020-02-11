@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * print_last_digit - prints the last digit of n
- * @n: Number to evaluate
+ * jack_bauer -time of a day
+ *
  * Return: return las digit of n
  */
 void jack_bauer(void)
@@ -11,15 +11,24 @@ void jack_bauer(void)
 	int y;
 	int z;
 
-	for ( w = '0'; w <= '2'; w++)
+	for (w = '0'; w <= '2'; w++)
 	{
-		for ( x = '0'; x <= '9'; x++)
+		for (x = '0'; x <= '9'; x++)
 		{
 			for (y = '0'; y < '6'; y++)
 			{
 				for (z = '0'; z <= '9'; z++)
 				{
-					if (!( x != '4' && w != '2'))
+					if (w < '2')
+					{
+						_putchar(w);
+						_putchar(x);
+						_putchar(':');
+						_putchar(y);
+						_putchar(z);
+						_putchar('\n');
+					}
+					else if (x < '4')
 					{
 						_putchar(w);
 						_putchar(x);
@@ -32,11 +41,4 @@ void jack_bauer(void)
 			}
 		}
 	}
-}
-
-
-int main(void)
-{
-	jack_bauer();
-	return (0);
 }
