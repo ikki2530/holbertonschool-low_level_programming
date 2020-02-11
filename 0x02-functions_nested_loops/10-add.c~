@@ -1,0 +1,14 @@
+#include "holberton.h"
+/**
+ * _isalpha - Checks for alphabetic characters
+ * @c: Letter to evaluted
+ * Return: 1 if c is a letter, lowercase or uppercase. 0 otherwise
+ */
+int add(int a, int b)
+{
+	int c;
+
+	c = a + b;
+
+	return (c);
+}
