@@ -25,6 +25,9 @@ int _abs(int n);
 /*This prototype return last digit of the number*/
 int print_last_digit(int n);
 
+/*This prototype return result of add 2 numbers*/
+int add(int a, int b);
+
 
 
 
