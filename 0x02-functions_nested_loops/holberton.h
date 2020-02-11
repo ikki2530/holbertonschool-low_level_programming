@@ -22,6 +22,9 @@ int print_sign(int n);
 /*This prototype return the absolute value of the number*/
 int _abs(int n);
 
+/*This prototype return last digit of the number*/
+int print_last_digit(int n);
+
 
 
 
