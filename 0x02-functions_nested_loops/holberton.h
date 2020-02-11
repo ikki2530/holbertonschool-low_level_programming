@@ -13,6 +13,9 @@ void print_alphabet_x10(void);
 /*This prototype check if a character is lower*/
 int _islower(int c);
 
+/*This prototype check if a char is a letter*/
+int _isalpha(int c);
+
 
 
 
