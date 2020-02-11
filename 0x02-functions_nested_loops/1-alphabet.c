@@ -12,15 +12,3 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
-/**
- * main - Prints the alphabet, in lowercase
- *
- * Return: returns 0
- *
- */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}

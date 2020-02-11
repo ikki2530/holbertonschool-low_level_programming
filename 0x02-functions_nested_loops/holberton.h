@@ -1,13 +1,14 @@
-#include <unistd.h>
+#ifndef _SAMPLE_HEADER_H_
+#define _SAMPLE_HEADER_H_
 
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+/*This prototype*/
+int _putchar(char c);
+
+/*This prototype has to be declared in a header file*/
+void print_alphabet(void);
+
+
+
+
+
+#endif /* _SAMPLE_HEADER_H_ */
