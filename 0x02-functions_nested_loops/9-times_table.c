@@ -16,8 +16,16 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			prod = i * j;
-			ch = prod + '0';
-			_putchar(ch);
+			if (prod < 10)
+			{
+				ch = prod + '0';
+				_putchar(ch);
+			}
+			else
+			{
+				_putchar((prod / 10) + '0');
+				_putchar((prod % 10) + '0');
+			}
 
 			if (j != 9)
 			{
@@ -27,14 +35,4 @@ void times_table(void)
 		}
 		_putchar('\n');
 	}
-}
-/**
- * main - Checks the print_last_digit function
- *
- * Return: return 0
- */
-int main(void)
-{
-	times_table();
-	return (0);
 }

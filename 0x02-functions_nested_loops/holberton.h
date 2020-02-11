@@ -28,6 +28,8 @@ int print_last_digit(int n);
 /*This prototype print the hour of a day*/
 void jack_bauer(void);
 
+/*This prototype prints the 9 times table, starting with 0*/
+void times_table(void);
 /*This prototype return result of add 2 numbers*/
 int add(int a, int b);
 
