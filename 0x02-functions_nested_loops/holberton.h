@@ -7,6 +7,9 @@ int _putchar(char c);
 /*This prototype has to be declared in a header file*/
 void print_alphabet(void);
 
+/*This prototype has to be declared in a header file*/
+void print_alphabet_x10(void);
+
 
 
 
