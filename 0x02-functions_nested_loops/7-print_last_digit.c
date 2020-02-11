@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 /**
  * print_last_digit - prints the last digit of n
  * @n: Number to evaluate
@@ -6,15 +6,14 @@ B#include "holberton.h"
  */
 int print_last_digit(int n)
 {
-	int lt;
 	char c;
 
 	if (n < 0)
-		n = -1 * n;
+		n = -n;
 
-	lt = n % 10;
-	c = lt + '0';
+	n = n % 10;
+	c = '0' + n;
 
 	_putchar(c);
-	return (lt);
+	return (n);
 }
