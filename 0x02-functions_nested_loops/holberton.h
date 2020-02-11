@@ -33,6 +33,9 @@ void times_table(void);
 /*This prototype return result of add 2 numbers*/
 int add(int a, int b);
 
+/*Thi prototype returns the numbers form n to 98*/
+void print_to_98(int n);
+
 
 
 

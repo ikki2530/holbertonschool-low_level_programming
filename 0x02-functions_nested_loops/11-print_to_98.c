@@ -1,22 +1,36 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
- * times_table - prints the last digit of n
- *
+ * print_to_98 - prints the last digit of n
+ * @n: number to evaluate
  * Return: return las digit of n
  */
 void print_to_98(int n)
 {
 	int i;
-	char fd;
-	char md;
-	char ld;
 
 	if (n < 98)
 	{
-		if
+		for (i = n; i <= 98; i++)
+		{
+			if (i != 98)
+				printf("%d, ", i);
+			else
+				printf("%d\n", i);
+		}
 	}
 	else if (n == 98)
 	{
-		_putchar(ld + '0');
+		printf("%d\n", 98);
+	}
+	else
+	{
+		for (i = n; i >= 98; i--)
+		{
+			if (i != 98)
+				printf("%d, ", i);
+			else
+				printf("%d\n", i);
+		}
 	}
 }
