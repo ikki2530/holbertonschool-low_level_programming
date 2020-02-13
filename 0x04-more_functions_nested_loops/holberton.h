@@ -10,4 +10,7 @@ int _isupper(int c);
 /* this prototype has to be declared in a header file */
 int _isdigit(int c);
 
+/* this prototype has to be declared in a header file */
+int mul(int a, int b);
+
 #endif /* _SAMPLE_HEADER_H_ */

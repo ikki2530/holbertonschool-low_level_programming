@@ -1,0 +1,10 @@
+#include "holberton.h"
+/**
+ * _isdigit - Checks if a value is a digit
+ * @c: var to evaluate
+ * Return: 1 if the value is a digit. 0 otherwise
+ */
+int mul(int a, int b)
+{
+	return (a * b);
+}
