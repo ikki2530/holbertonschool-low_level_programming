@@ -19,4 +19,11 @@ void print_numbers(void);
 /* this prototype has to be declared in a header file */
 void print_most_numbers(void);
 
+/* this prototype has to be declared in a header file */
+void more_numbers(void);
+
+/* this prototype has to be declared in a header file */
+void print_line(int n);
+
+
 #endif /* _SAMPLE_HEADER_H_ */
