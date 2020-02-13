@@ -25,5 +25,8 @@ void more_numbers(void);
 /* this prototype has to be declared in a header file */
 void print_line(int n);
 
+/* this prototype has to be declared in a header file */
+void print_diagonal(int n);
+
 
 #endif /* _SAMPLE_HEADER_H_ */
