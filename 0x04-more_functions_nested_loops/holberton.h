@@ -28,5 +28,9 @@ void print_line(int n);
 /* this prototype has to be declared in a header file */
 void print_diagonal(int n);
 
+/* this prototype has to be declared in a header file */
+void print_square(int size);
+
+
 
 #endif /* _SAMPLE_HEADER_H_ */
