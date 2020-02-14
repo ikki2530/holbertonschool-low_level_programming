@@ -11,7 +11,7 @@ int main(void)
 	long int change;
 	int i = 0;
 
-	while (i < 48)
+	while (i <= 48)
 	{
 		change = n1 + n2;
 		n1 = n2;
@@ -28,7 +28,7 @@ int main(void)
 		{
 			printf("%li", change);
 
-			if (i < 47)
+			if (i <= 47)
 			{
 				putchar(',');
 				putchar(' ');
