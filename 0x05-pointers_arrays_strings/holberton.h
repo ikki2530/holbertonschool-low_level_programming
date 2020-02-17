@@ -18,6 +18,9 @@ void _puts(char *str);
 /* this prototype has to be declared in a header file */
 void print_rev(char *s);
 
+/* this prototype has to be declared in a header file */
+void rev_string(char *s);
+
 
 
 #endif /* _SAMPLE_HEADER_H_ */

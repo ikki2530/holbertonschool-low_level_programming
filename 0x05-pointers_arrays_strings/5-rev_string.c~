@@ -1,0 +1,30 @@
+#include "holberton.h"
+#include <stdio.h>
+/**
+ * *s es una direccion de algo, es la direccion de caracteres
+ * s: asiganción de caracteres
+ * &s cambio de direccion, uso de direccion de caracteres
+ * rev_string - Prints a string in reverse
+ * @s: string to reverse
+ * Return: Nothing
+ */
+void rev_string(char *s)
+{
+	int i;
+	int j;
+	char temp;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+
+	}
+	i--;
+	printf("%i\n", i);
+
+	for (j = 0; j < (i / 4); j++)
+	{
+		temp = s[i - j];
+		s[i - j] = s[j];
+		s[j] = temp;
+	}
+}
