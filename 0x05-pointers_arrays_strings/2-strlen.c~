@@ -1,0 +1,18 @@
+#include "holberton.h"
+/**
+ * _strlen - Prints numbers 0 - 9
+ * @s: string to count
+ * Return: return the length of a string
+ */
+int _strlen(char *s)
+{
+	int count;
+	int m;
+
+	for (m = 0; *s[m] != '\0'; m++)
+	{
+		count++;
+	}
+
+	return (count);
+}

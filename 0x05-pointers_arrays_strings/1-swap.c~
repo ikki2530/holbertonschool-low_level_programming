@@ -1,0 +1,12 @@
+#include "holberton.h"
+/**
+ * print_numbers - Prints numbers 0 - 9
+ *
+ * Return: Nothing
+ */
+void swap_int(int *a, int *b)
+{
+	int tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
