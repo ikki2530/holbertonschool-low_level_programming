@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_numbers - Prints numbers 0 - 9
+ * _puts - Prints a string
  * @str: string to print
  * Return: Nothing
  */
