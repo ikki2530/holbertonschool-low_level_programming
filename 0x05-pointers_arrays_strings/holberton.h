@@ -30,6 +30,9 @@ void puts_half(char *str);
 /* this prototype has to be declared in a header file */
 void print_array(int *a, int n);
 
+/* this prototype has to be declared in a header file */
+char *_strcpy(char *dest, char *src);
+
 
 
 
