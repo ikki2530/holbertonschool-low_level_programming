@@ -16,7 +16,6 @@ void rev_string(char *s)
 
 	}
 	i--;
-	printf("%i\n", i);
 
 	for (j = 0; j < (i / 4); j++)
 	{
