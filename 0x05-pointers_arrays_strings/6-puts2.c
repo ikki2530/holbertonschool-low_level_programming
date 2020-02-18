@@ -13,7 +13,6 @@ void puts2(char *str)
 	{
 
 	}
-	printf("%i\n", x);
 
 	x--;
 	while (y <= x)

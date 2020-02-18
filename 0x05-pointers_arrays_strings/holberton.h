@@ -24,6 +24,14 @@ void rev_string(char *s);
 /* this prototype has to be declared in a header file */
 void puts2(char *str);
 
+/* this prototype has to be declared in a header file */
+void puts_half(char *str);
+
+/* this prototype has to be declared in a header file */
+void print_array(int *a, int n);
+
+
+
 
 
 #endif /* _SAMPLE_HEADER_H_ */
