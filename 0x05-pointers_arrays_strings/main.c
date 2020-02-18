@@ -7,13 +7,9 @@
  */
 int main(void)
 {
-	int array[5];
+	char *str;
 
-	array[0] = 98;
-	array[1] = 402;
-	array[2] = -198;
-	array[3] = 298;
-	array[4] = -1024;
-	print_array(array, 0);
+	str = "I do not fear computers";
+	_puts(str);
 	return (0);
 }
