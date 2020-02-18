@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * puts_half - prints last half of string
  * @str: string to print
@@ -14,7 +13,6 @@ void puts_half(char *str)
 	{
 
 	}
-	printf("%i\n", x);
 
 	if (x % 2 == 0)
 	{
