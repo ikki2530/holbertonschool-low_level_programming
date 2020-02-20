@@ -19,4 +19,7 @@ int _strcmp(char *s1, char *s2);
 /* this prototype has to be declared in a header file */
 void reverse_array(int *a, int n);
 
+/* this prototype has to be declared in a header file */
+char *string_toupper(char *);
+
 #endif /* _SAMPLE_HEADER_H_ */
