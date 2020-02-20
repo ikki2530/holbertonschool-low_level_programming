@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * _strncat - copies the string pointed to by src
  * @dest: where string will be copy
@@ -17,8 +16,6 @@ char *_strncat(char *dest, char *src, int n)
 
 	}
 
-	printf("valor lg %i\n", lg);
-
 	if (n <= lg)
 	{
 		for (i = 0; i < n; i++)
@@ -34,7 +31,7 @@ char *_strncat(char *dest, char *src, int n)
 		}
 		dest[lg + i] = '\0';
 	}
-	printf("valor i %i\n", i);
+
 	return (dest);
 
 }
