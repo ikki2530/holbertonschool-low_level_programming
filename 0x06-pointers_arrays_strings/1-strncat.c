@@ -12,11 +12,11 @@ char *_strncat(char *dest, char *src, int n)
 	int lg;
 	int i;
 
-	for (lg = 0; src[lg] != '\0'; lg++)
+	for (lg = 0; dest[lg] != '\0'; lg++)
 	{
 
 	}
-	lg--;
+
 	printf("valor lg %i\n", lg);
 
 	if (n <= lg)
@@ -28,15 +28,13 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	else
 	{
-		for (i = 0; i != '\0'; i++)
+		for (i = 0; src[i] != '\0'; i++)
 		{
 			dest[lg + i] = src[i];
 		}
 		dest[lg + i] = '\0';
 	}
 	printf("valor i %i\n", i);
-
-	for(j = 0; j
 	return (dest);
 
 }
