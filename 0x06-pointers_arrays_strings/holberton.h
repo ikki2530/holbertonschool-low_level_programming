@@ -16,4 +16,7 @@ char *_strncpy(char *dest, char *src, int n);
 /* this prototype has to be declared in a header file */
 int _strcmp(char *s1, char *s2);
 
+/* this prototype has to be declared in a header file */
+void reverse_array(int *a, int n);
+
 #endif /* _SAMPLE_HEADER_H_ */
