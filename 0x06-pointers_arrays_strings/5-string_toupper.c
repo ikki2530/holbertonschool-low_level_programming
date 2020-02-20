@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * string_toupper - convert a string to upper
  * @c: string to evaluate
@@ -19,8 +18,6 @@ char *string_toupper(char *c)
 	for (i = 0; i < lg; i++)
 	{
 		val = c[i] - '0';
-		printf("c[i] %i %c\n", i, c[i]);
-		printf("val %i\n\n", val);
 		if (val >= 49 && val <= 74)
 		{
 			val = val - 32;
