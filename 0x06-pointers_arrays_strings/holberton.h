@@ -10,4 +10,7 @@ char *_strcat(char *dest, char *src);
 /* this prototype has to be declared in a header file */
 char *_strncat(char *dest, char *src, int n);
 
+/* this prototype has to be declared in a header file */
+char *_strncpy(char *dest, char *src, int n);
+
 #endif /* _SAMPLE_HEADER_H_ */
