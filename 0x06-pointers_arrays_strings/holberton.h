@@ -22,4 +22,10 @@ void reverse_array(int *a, int n);
 /* this prototype has to be declared in a header file */
 char *string_toupper(char *);
 
+/* this prototype has to be declared in a header file */
+char *cap_string(char *);
+
+/* this prototype has to be declared in a header file */
+char *leet(char *);
+
 #endif /* _SAMPLE_HEADER_H_ */
