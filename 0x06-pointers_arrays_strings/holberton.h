@@ -31,4 +31,7 @@ char *leet(char *);
 /* this prototype has to be declared in a header file */
 char *rot13(char *);
 
+/* this prototype has to be declared in a header file */
+void print_number(int n);
+
 #endif /* _SAMPLE_HEADER_H_ */
