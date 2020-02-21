@@ -28,4 +28,7 @@ char *cap_string(char *);
 /* this prototype has to be declared in a header file */
 char *leet(char *);
 
+/* this prototype has to be declared in a header file */
+char *rot13(char *);
+
 #endif /* _SAMPLE_HEADER_H_ */
