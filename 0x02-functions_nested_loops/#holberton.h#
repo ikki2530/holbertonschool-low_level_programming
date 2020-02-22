@@ -30,7 +30,6 @@ void jack_bauer(void);
 
 /*This prototype prints the 9 times table, starting with 0*/
 void times_table(void);
-
 /*This prototype return result of add 2 numbers*/
 int add(int a, int b);
 
