@@ -54,9 +54,7 @@ void print_times_table(int n)
 						_putchar(' ');
 
 						if (val2 < 100)
-						{
 							_putchar(' ');
-						}
 					}
 				}
 			}
