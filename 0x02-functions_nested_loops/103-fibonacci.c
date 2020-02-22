@@ -29,11 +29,10 @@ int main(void)
 				v += change;
 			}
 		}
-		printf("change %li  n1 %li   n2 %li\n", change, n1, n2);
 
 		i++;
 	}
-	putchar('\n');
+	printf("%li\n", v);
 
 	return (0);
 }
