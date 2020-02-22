@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * print_times_table - prints times table until 0 - 15
  * @n: times table val
