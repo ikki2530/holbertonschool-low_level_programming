@@ -20,8 +20,7 @@ int main(void)
 
 		if (i == 0)
 		{
-			n2 = 2;
-			v += n2;
+			v += change - 1;
 		}
 		else
 		{
@@ -30,6 +29,7 @@ int main(void)
 				v += change;
 			}
 		}
+		printf("change %li  n1 %li   n2 %li\n", change, n1, n2);
 
 		i++;
 	}
