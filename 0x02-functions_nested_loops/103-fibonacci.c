@@ -33,7 +33,6 @@ int main(void)
 
 		i++;
 	}
-	printf("%li\n", v);
 	putchar('\n');
 
 	return (0);
