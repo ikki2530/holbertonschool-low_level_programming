@@ -20,8 +20,10 @@ char *_strchr(char *s, char c)
 	}
 
 	if (val == 1)
+	{
 		p = &s[i];
 		return (p);
+	}
 	else
 		return (p);
 }
