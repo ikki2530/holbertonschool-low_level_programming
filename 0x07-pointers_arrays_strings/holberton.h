@@ -22,4 +22,7 @@ char *_strpbrk(char *s, char *accept);
 /* this prototype has to be declared in a header file */
 char *_strstr(char *haystack, char *needle);
 
+/* this prototype has to be declared in a header file */
+void print_chessboard(char (*a)[8]);
+
 #endif /* _SAMPLE_HEADER_H_ */
