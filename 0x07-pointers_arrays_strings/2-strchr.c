@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * _strchr - locates a character in a string
  * @s: The string which is to be scanned to search the character
@@ -7,10 +8,15 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i, val = 0;
+	int i, j, val = 0;
 	char *p = '\0';
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (j = 0; s[j] != '\0'; j++)
+	{
+
+	}
+	printf("longitud s %i\n", j);
+	for (i = 0; i < j; i++)
 	{
 		if (s[i] == c)
 		{
