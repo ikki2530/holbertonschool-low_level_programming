@@ -8,11 +8,17 @@
  */
 int main(void)
 {
-	char a[] = "Hola tarola";
-	char b[] = "Que mas a todos";
+	char *s = "Helloworld!";
+	char *f;
 
-	_memcpy(a, b, 5);
-	printf("New arrays : %s\t%s", a, b);
+	f = _strchr(s, 'i');
+
+	if (f != NULL)
+	{
+		printf("%s\n", f);
+	}
+	else
+		puts("Null value");
 
 	return (0);
 }
