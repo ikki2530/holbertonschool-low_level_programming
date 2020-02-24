@@ -1,0 +1,12 @@
+#include "holberton.h"
+/**
+ * _memcpy - copy a part a string into another one
+ * @dest: destination
+ * @src: string to be copy
+ * @n: number of times the string will be copy
+ * Return: string
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	
+}

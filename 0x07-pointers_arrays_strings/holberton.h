@@ -7,4 +7,7 @@ int _putchar(char c);
 /* this prototype has to be declared in a header file */
 char *_memset(char *s, char b, unsigned int n);
 
+/* this prototype has to be declared in a header file */
+char *_memcpy(char *dest, char *src, unsigned int n);
+
 #endif /* _SAMPLE_HEADER_H_ */

@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
+
 /**
  * main - check the code for Holberton School students.
  *
@@ -7,8 +8,11 @@
  */
 int main(void)
 {
-	char string[] = "This is string.h library function";
-	_memset(string, '*', 14);
-	puts(string);
+	char a[] = "Hola tarola";
+	char b[] = "Que mas a todos";
+
+	_memcpy(a, b, 5);
+	printf("New arrays : %s\t%s", a, b);
+
 	return (0);
 }
