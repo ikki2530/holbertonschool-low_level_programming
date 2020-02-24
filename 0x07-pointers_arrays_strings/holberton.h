@@ -18,4 +18,8 @@ unsigned int _strspn(char *s, char *accept);
 
 /* this prototype has to be declared in a header file */
 char *_strpbrk(char *s, char *accept);
+
+/* this prototype has to be declared in a header file */
+char *_strstr(char *haystack, char *needle);
+
 #endif /* _SAMPLE_HEADER_H_ */

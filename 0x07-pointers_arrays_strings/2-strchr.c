@@ -8,13 +8,12 @@
 char *_strchr(char *s, char c)
 {
 	int i, j, val = 0;
-	char *p = '\0';
 
 	for (j = 0; s[j] != '\0'; j++)
 	{
 
 	}
-	for (i = 0; i < j; i++)
+	for (i = 0; i <= j; i++)
 	{
 		if (s[i] == c)
 		{
@@ -25,8 +24,7 @@ char *_strchr(char *s, char c)
 
 	if (val == 1)
 	{
-		p = &s[i];
-		return (p);
+		return (&s[i]);
 	}
 	else
 		return ('\0');
