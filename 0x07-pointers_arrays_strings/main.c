@@ -8,17 +8,14 @@
  */
 int main(void)
 {
-	char *s = "Helloworld!";
-	char *f;
+	char *s = "hello, world";
+	char *f = "xi";
+	char *t;
 
-	f = _strchr(s, 'i');
-
-	if (f != NULL)
-	{
-		printf("%s\n", f);
-	}
+	t = _strpbrk(s, f);
+	if (t != NULL)
+		printf("%s\n", t);
 	else
-		puts("Null value");
-
+		puts("valor NULL\n");
 	return (0);
 }

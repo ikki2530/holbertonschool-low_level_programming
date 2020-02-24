@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _memeset - fills the first n bytes of s string with b char
+ * _memset - fills the first n bytes of s string with b char
  * @s: string
  * @b: char
  * @n: number of times the char b will appear in the s string
