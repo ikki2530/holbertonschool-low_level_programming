@@ -18,7 +18,6 @@ void print_diagsums(int *a, int size)
 	for (x = y; x < size * size - 2; x += y)
 	{
 		sum2 += a[x];
-		printf("a[x] %i en x = %i\n", a[x], x);
 	}
 
 	printf("%i, %i\n", sum1, sum2);
