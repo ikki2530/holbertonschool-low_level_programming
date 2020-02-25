@@ -28,4 +28,7 @@ void print_chessboard(char (*a)[8]);
 /* this prototype has to be declared in a header file */
 void print_diagsums(int *a, int size);
 
+/* this prototype has to be declared in a header file */
+void set_string(char **s, char *to);
+
 #endif /* _SAMPLE_HEADER_H_ */
