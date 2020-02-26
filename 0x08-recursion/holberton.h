@@ -13,4 +13,7 @@ void _print_rev_recursion(char *s);
 /* this prototype has to be declared in a header file */
 int _strlen_recursion(char *s);
 
+/* this prototype has to be declared in a header file */
+int factorial(int n);
+
 #endif /* _SAMPLE_HEADER_H_ */
