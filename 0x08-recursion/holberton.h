@@ -19,4 +19,7 @@ int factorial(int n);
 /* this prototype has to be declared in a header file */
 int _pow_recursion(int x, int y);
 
+/* this prototype has to be declared in a header file */
+int _sqrt_recursion(int n);
+
 #endif /* _SAMPLE_HEADER_H_ */
