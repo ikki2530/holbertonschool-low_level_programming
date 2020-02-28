@@ -1,0 +1,12 @@
+#include "holberton.h"
+/**
+ * _atoi - Convert string to a integer
+ * @s: string to reverse
+ * Return: Nothing
+ */
+int _atoi(char *s)
+{
+	int sum = 1;
+
+	return (sum);
+}

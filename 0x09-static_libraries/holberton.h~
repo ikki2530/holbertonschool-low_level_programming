@@ -1,0 +1,12 @@
+#ifndef _SAMPLE_HEADER_H_
+#define _SAMPLE_HEADER_H_
+/*prototype to print a char*/
+int _putchar(char c);
+
+/*prototype of lowercase*/
+int _islower(int c);
+
+/*Prototype to check if c is a letter*/
+int _isalpha(int c);
+
+#endif /* _SAMPLE_HEADER_H_ */

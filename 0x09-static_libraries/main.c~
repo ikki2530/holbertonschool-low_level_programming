@@ -1,0 +1,10 @@
+#include "holberton.h"
+
+int main(void)
+{
+	int n = 0;
+
+	n = _abs(-5);
+	printf("valor de n %d\n", n);
+        return (0);
+}
