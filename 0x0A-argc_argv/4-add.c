@@ -9,7 +9,6 @@
  */
 int main(int argc, char **argv)
 {
-
 	int i, j, sum = 0, dc = 0, band = 1;
 	char c;
 
