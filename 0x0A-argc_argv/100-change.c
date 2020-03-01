@@ -15,9 +15,7 @@ int main(int argc, char **argv)
 	{
 		num = atoi(argv[1]);
 		if (num < 0)
-		{
 			printf("0\n");
-		}
 		else
 		{
 			while (num != 0)
@@ -28,13 +26,13 @@ int main(int argc, char **argv)
 					ncoins += val;
 					num = num - (val * 25);
 				}
-				else if(num < 24 && num >= 10)
+				else if (num < 24 && num >= 10)
 				{
 					val = num / 10;
 					ncoins += val;
 					num = num - (val * 10);
 				}
-				else if(num < 10 && num >= 5)
+				else if (num < 10 && num >= 5)
 				{
 					val = num / 5;
 					ncoins += val;
@@ -46,7 +44,7 @@ int main(int argc, char **argv)
 					ncoins += val;
 					num = num - (val * 2);
 				}
-				else if(num == 1)
+				else if (num == 1)
 				{
 					ncoins += num;
 					num = 0;
