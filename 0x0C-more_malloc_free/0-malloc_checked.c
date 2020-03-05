@@ -8,7 +8,8 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	float *p;
+	int *p;
+
 	p = malloc(b);
 	if (p == '\0')
 		exit (98);
