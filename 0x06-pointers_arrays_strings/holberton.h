@@ -34,4 +34,7 @@ char *rot13(char *);
 /* this prototype has to be declared in a header file */
 void print_number(int n);
 
+/* this prototype has to be declared in a header file */
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+
 #endif /* _SAMPLE_HEADER_H_ */
