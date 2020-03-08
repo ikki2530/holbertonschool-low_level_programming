@@ -9,6 +9,7 @@ int main(void)
 	long double n2 = 2;
 	long double temp;
 	int i = 0;
+
 	while (i < 97)
 	{
 
