@@ -9,19 +9,16 @@ int main(void)
 	long double n2 = 2;
 	long double temp;
 	int i = 0;
-	int pr = 0;
-
 	while (i < 97)
 	{
 
 		if (i == 0)
 		{
-			printf("%Lf, %Lf, ", n1, n2);
-			pr++;
+			printf("%0.0Lf, %0.0Lf, ", n1, n2);
 		}
 		else
 		{
-			printf("%Lf", temp);
+			printf("%0.0Lf", temp);
 			if (i != 96)
 			{
 				putchar(',');
