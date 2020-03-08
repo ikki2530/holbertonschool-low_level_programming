@@ -11,7 +11,7 @@ int main(void)
 	int i = 0;
 	int pr = 0;
 
-	while (i < 98)
+	while (i < 97)
 	{
 
 		if (i == 0)
@@ -22,7 +22,7 @@ int main(void)
 		else
 		{
 			printf("%Lf", temp);
-			if (i != 97)
+			if (i != 96)
 			{
 				putchar(',');
 				putchar(' ');
