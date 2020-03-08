@@ -25,3 +25,5 @@ if is a letter(lowercase or uppercase), 0 otherwise.<br/>
 and 2.<br/>
 **103-fibonacci.c:** finds and prints the sum of the even-valued terms in the
 Fibonacci sequence whose do not exceed 4,000,000.<br/>
+**104-fibonacci.c:** prints the first 98 Fibonacci numbers, starting with 1
+and 2.<br/>
