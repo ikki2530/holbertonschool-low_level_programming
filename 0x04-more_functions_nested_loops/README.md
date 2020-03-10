@@ -1,5 +1,11 @@
 # More functions, nested loops<br/>
 
+## holberton.h<br/>
+**Includes the _prototypes_ of all functions.**<br/>
+
+## _putchar.c
+**writes the character c to stdout.**<br/>
+
 ## 0-isupper.c<br/>
 function that checks for uppercase character.<br/>
 - **Prototype:** int _isupper(int c);
