@@ -1,27 +1,43 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * init_dog - initialize structure dog
- * @d: pointer to dog structure
+ * new_dog - initialize structure dog
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
- * Return: nothing
+ * Return: pointer of type dog_t
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *dg;
+	struct dog_t *dg;
+	int lg, lg2, i, j;
 
-	dg = malloc(sizeof(struct dog));
+	dg = malloc(sizeof(dog_t));
 	if (dg == NULL)
+		return (NULL);
+	for (lg = 0; name[lg] != '\0'; lg++)
+	{}
+	for (lg2 = 0; owner[lg2] != '\0'; lg2++)
+	{}
+	dg->name = malloc(sizeof(char) * (lg + 1));
+	if (dg->name == NULL)
 	{
 		free(dg);
 		return (NULL);
 	}
-
-	dg->name = name;
+	dg->owner = malloc(sizeof(char) * (lg2 + 1));
+	if (dg->owner == NULL)
+	{
+		free(dg->name);
+		free(dg);
+		return (NULL);
+	}
+	for (i = 0; i < lg; i++)
+		dg->name[i] = name[i];
+	for (j = 0; j < lg2; j++)
+		dg->owner[j] = owner[i];
+	dg->name[i] = '\0';
+	dg->owner[j] = '\0';
 	dg->age = age;
-	dg->owner = owner;
-
 	return (dg);
 }
