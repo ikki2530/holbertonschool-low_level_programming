@@ -1,17 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-/**
- * f - function that prints a name
- * @name: name passed
- * Return: nothing
- */
-void f(char *name)
-{
-	int i;
-
-	for (i = 0; name[i] != '\0'; i++)
-		printf("%c", name[i]);
-}
 
 /**
  *print_name -  functions that call the f function
