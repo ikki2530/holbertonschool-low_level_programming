@@ -27,9 +27,10 @@ int main(int argc, char **argv)
 
 	for (i = 0; i < bt; i++)
 	{
-		printf("%02hhx ", p[i]);
 		if (i == (bt - 1))
 			printf("%02hhx\n", p[i]);
+		else
+			printf("%02hhx ", p[i]);
 	}
 
 	return (0);
