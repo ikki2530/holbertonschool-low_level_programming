@@ -41,12 +41,12 @@ void print_all(const char * const format, ...)
 	va_list lt;
 
 	lg = 0, j = 0;
-	while (format[lg])
+	while (format != '\0' && format[lg] != '\0')
 	{
 		lg++;
 	}
 	va_start(lt, format);
-	while (format[j] != '\0')
+	while (format != '\0' && format[j] != '\0')
 	{
 		switch (format[j])
 		{
