@@ -16,6 +16,19 @@ void separator(int j, int lg)
 	}
 		printf(", ");
 }
+
+/**
+ * nil - prints nil
+ * @j: iterator
+ * @lg: legnth of format
+ * Return: Nothing
+ */
+void nil(int j, int lg)
+{
+	printf("nil");
+	separator(j, lg);
+}
+
 /**
  * print_all - prints split by a separator
  *@format: separator to split the numbers
@@ -24,16 +37,15 @@ void separator(int j, int lg)
 void print_all(const char * const format, ...)
 {
 	int j, lg;
-	char * s;
+	char *s;
 	va_list lt;
 
-	lg = 0;
+	lg = 0, j = 0;
 	while (format[lg])
 	{
 		lg++;
 	}
 	va_start(lt, format);
-	j = 0;
 	while (format[j] != '\0')
 	{
 		switch (format[j])
@@ -54,16 +66,14 @@ void print_all(const char * const format, ...)
 			s = va_arg(lt, char *);
 			if (s == NULL)
 			{
-				printf("nil");
-				separator(j, lg);
+				nil(j, lg);
 				break;
 			}
-			printf("%s",s);
+			printf("%s", s);
 			separator(j, lg);
 			break;
 		}
 		j++;
 	}
-
 	va_end(lt);
 }
