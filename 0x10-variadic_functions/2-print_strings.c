@@ -36,8 +36,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	s = separator;
 	if (separator == NULL)
 		band = 1;
-
-	va_start(lista, n);
 	va_start(lista, n);
 	for (i = 0; i < n; i++)
 	{
