@@ -17,7 +17,7 @@ const char *s)
 	if (i < (n - 1) && band == 0)
 		printf("%s%s", p, s);
 	if (i == (n - 1) && (band == 1 || band == 0))
-		printf("%s\n", p);
+		printf("%s", p);
 }
 /**
  * print_strings - prints each string split by a separator
@@ -50,5 +50,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			prints(i, n, band, p, s);
 		}
 	}
+	printf("\n");
 	va_end(lista);
 }
