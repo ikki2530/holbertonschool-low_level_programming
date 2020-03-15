@@ -1,79 +1,87 @@
+#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
 /**
- *separator - prints comma separator
- *@j: iterator
- *@lg: lenth of format
- *Return: Nothing
+ * prt_s - prints strings
+ * @list: parameter list
+ * Return: nothing
  */
-
-void separator(int j, int lg)
+void prt_s(va_list list)
 {
-	if (j == (lg - 1))
+	char *stg;
+
+	stg = va_arg(list, char *);
+	if (stg == NULL)
 	{
-		printf("\n");
+		printf("(nail)");
 		return;
 	}
-		printf(", ");
-}
 
+	printf("%s", stg);
+}
 /**
- * nil - prints nil
- * @j: iterator
- * @lg: legnth of format
- * Return: Nothing
+ * prt_f - prints floats
+ * @list: parameter list
+ * Return: nothing
  */
-void nil(int j, int lg)
+void prt_f(va_list list)
 {
-	printf("nil");
-	separator(j, lg);
+	printf("%f", va_arg(list, double));
+}
+/**
+ * prt_i - prints ints
+ * @list: parameter list
+ * Return: nothing
+ */
+void prt_i(va_list list)
+{
+	printf("%i", va_arg(list, int));
+}
+/**
+ * prt_c - prints chars
+ * @list: lista de parámetros
+ * Return: nothing
+ */
+void prt_c(va_list list)
+{
+	printf("%c", va_arg(list, int));
 }
 
 /**
  * print_all - prints split by a separator
- *@format: separator to split the numbers
+ * @format: separator to split the numbers
  * Return: nothing
  */
 void print_all(const char * const format, ...)
 {
-	int j, lg;
 	char *s;
-	va_list lt;
+	unsigned int x, y;
+	va_list lista;
+	cmp dataT[] = {
+		{"c", prt_c},
+		{"i", prt_i},
+		{"f", prt_f},
+		{"s", prt_s}
+	};
 
-	lg = 0, j = 0;
-	while (format != '\0' && format[lg] != '\0')
+	va_start(lista, format);
+	s = "";
+	x = 0;
+	while (format != '\0' && format[x] != '\0')
 	{
-		lg++;
-	}
-	va_start(lt, format);
-	while (format != '\0' && format[j] != '\0')
-	{
-		switch (format[j])
+		y = 0;
+		while (y < 4)
 		{
-		case 'c':
-			printf("%c", va_arg(lt, int));
-			separator(j, lg);
-			break;
-		case 'i':
-			printf("%i", va_arg(lt, int));
-			separator(j, lg);
-			break;
-		case 'f':
-			printf("%f", va_arg(lt, double));
-			separator(j, lg);
-			break;
-		case 's':
-			s = va_arg(lt, char *);
-			if (s == NULL)
+			if (dataT[y].str[0] == format[x])
 			{
-				nil(j, lg);
-				break;
+				printf("%s", s);
+				dataT[y].prt(lista);
+				s = ", ";
 			}
-			printf("%s", s);
-			separator(j, lg);
-			break;
+			y++;
 		}
-		j++;
+		x++;
 	}
-	va_end(lt);
+	printf("\n");
+	va_end(lista);
 }
