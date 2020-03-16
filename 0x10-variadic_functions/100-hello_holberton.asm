@@ -1,17 +1,12 @@
 section .data
+	txt db "Hello, Holberton", 10
 
-	message db "Hello, Holberton", 10
+	section .text
+	global main
 
-section .text
-	global _start
-
-_start:
+main:
 	mov rax, 1
 	mov rdi, 1
-	mov rsi, message
+	mov rsi, txt
 	mov rdx, 17
-	syscall
-
-	mov rax, 60
-	mov rdi, 0
 	syscall
