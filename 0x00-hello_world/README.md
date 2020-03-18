@@ -1,6 +1,7 @@
 # C Language<br/><br/>
 Those are the files that you can find into this projects
 | Files | Features |
+| ----- | ----- |
 | **0-preprocessor:** | runs a C file through the preprocessor and save it in another file. |
 | **1-compiler:** | compiles a C file but does not link. |
 | **2-assembler:** | script that generates the assembly code of a C code and save it in an output file. |
