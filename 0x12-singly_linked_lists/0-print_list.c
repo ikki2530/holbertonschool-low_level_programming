@@ -20,7 +20,7 @@ void print_element(const list_t *h)
  */
 size_t print_list(const list_t *h)
 {
-	unsigned int i = 0;
+	size_t i = 0;
 
 	while (h->next != NULL)
 	{
