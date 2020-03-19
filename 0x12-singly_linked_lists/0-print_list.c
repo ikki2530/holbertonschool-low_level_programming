@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * print_element - prints each element of the list
  * @h: list element
@@ -7,10 +6,10 @@
  */
 void print_element(const list_t *h)
 {
-	if (h->str != '\0')
-		printf("[%d] %s\n", h->len, h->str);
-	else
+	if (h->str == '\0')
 		printf("[0] (nil)\n");
+	else
+		printf("[%d] %s\n", h->len, h->str);
 }
 
 /**
