@@ -1,7 +1,5 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stddef.h>
-
 /**
  * print_element - prints each element of the list
  * @h: list element
@@ -14,6 +12,7 @@ void print_element(const list_t *h)
 	else
 		printf("[0] (nil)\n");
 }
+
 /**
  * print_list - prints all elements of a list
  * @h: first element of a list
