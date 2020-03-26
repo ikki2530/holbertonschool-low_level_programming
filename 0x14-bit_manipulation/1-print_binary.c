@@ -48,7 +48,7 @@ void print_binary(unsigned long int n)
 
 	if (n == 0)
 		_putchar('0');
-	while (n != 0)
+	while (n > 0)
 	{
 		exp = pos1(n);
 		if (band == 0)
