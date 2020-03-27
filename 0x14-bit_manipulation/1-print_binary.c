@@ -17,10 +17,8 @@ void print_binary(unsigned long int n)
 	{
 		res = n >> i;
 		if (res & 1)
-		{
 			_putchar('1');
-		}
-		else
+		else if (res | 0)
 			_putchar('0');
 	}
 }
