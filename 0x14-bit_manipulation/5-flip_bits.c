@@ -7,13 +7,13 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int r = 0, i = 0;
+	unsigned long int r = 0, i = 0, res = 0;
 
-	r = n ^ m;
+	n ^= m;
 	for (i = 0; i < 63; i++)
 	{
-		r = r >> i;
-		if (r & 1)
+		res = n >> i;
+		if (res & 1)
 			r++;
 	}
 	return (r);
