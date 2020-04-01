@@ -34,20 +34,22 @@ void func_cp(char *ffrom, char *fto)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fto);
 		exit(99);
 	}
-	rd = read(fdfrom, s, 1024);
-	if (rd == -1)
-	{
-		free(s);
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", ffrom);
-		exit(98);
-	}
-	wr = write(fdto, s, rd);
-	if (wr == -1)
-	{
-		free(s);
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fto);
-		exit(99);
-	}
+	do {
+		rd = read(fdfrom, s, 1024);
+		if (rd == -1)
+		{
+			free(s);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", ffrom);
+			exit(98);
+		}
+		wr = write(fdto, s, rd);
+		if (wr == -1)
+		{
+			free(s);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fto);
+			exit(99);
+		}
+	} while (rd > 0);
 	clf = close(fdfrom);
 	clt = close(fdto);
 	if (clf == -1)
