@@ -4,39 +4,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "holberton.h"
-
-/**
- * errorfrom - check for errors in from file
- * @s2: string to be freed
- * @ffrom: file with the text content
- * @n: indicitas if there is an error
- */
-
-void errorfrom(char *s2, char *ffrom, int n)
-{
-	if (n == -1)
-	{
-		free(s2);
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", ffrom);
-		exit(98);
-	}
-}
-
-/**
- * errorto - check for errors in from file
- * @s2: string to be freed
- * @fto: file with the text content
- * @n: indicitas if there is an error
- */
-void errorto(char *s2, char *fto, int n)
-{
-	if (n == -1)
-	{
-		free(s2);
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fto);
-		exit(99);
-	}
-}
 /**
  * func_cp - copies the content of ffrom to fto
  * @ffrom: file with the text content
@@ -54,16 +21,33 @@ void func_cp(char *ffrom, char *fto)
 		exit(98);
 	}
 	fdfrom = open(ffrom, O_RDONLY);
-	errorfrom(s, ffrom, fdfrom);
-
+	if (fdfrom == -1)
+	{
+		free(s);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", ffrom);
+		exit(98);
+	}
 	fdto = open(fto, O_CREAT | O_TRUNC | O_WRONLY, 0664);
-	errorto(s, fto, fdto);
-
+	if (fdto == -1)
+	{
+		free(s);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fto);
+		exit(99);
+	}
 	rd = read(fdfrom, s, 1024);
-	errorfrom(s, ffrom, rd);
-
+	if (rd == -1)
+	{
+		free(s);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", ffrom);
+		exit(98);
+	}
 	wr = write(fdto, s, rd);
-	errorto(s, fto, wr);
+	if (wr == -1)
+	{
+		free(s);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fto);
+		exit(99);
+	}
 	clf = close(fdfrom);
 	clt = close(fdto);
 	if (clf == -1)
