@@ -11,6 +11,7 @@
  * @ffrom: file with the text content
  * @n: indicitas if there is an error
  */
+
 void errorfrom(char *s2, char *ffrom, int n)
 {
 	if (n == -1)
@@ -20,6 +21,7 @@ void errorfrom(char *s2, char *ffrom, int n)
 		exit(98);
 	}
 }
+
 /**
  * errorto - check for errors in from file
  * @s2: string to be freed
@@ -52,19 +54,15 @@ void func_cp(char *ffrom, char *fto)
 		exit(98);
 	}
 	fdfrom = open(ffrom, O_RDONLY);
-	printf("fdfrom %d\n", fdfrom);
 	errorfrom(s, ffrom, fdfrom);
 
 	fdto = open(fto, O_CREAT | O_TRUNC | O_WRONLY, 0664);
-	printf("fdto %d\n", fdto);
 	errorto(s, fto, fdto);
 
 	rd = read(fdfrom, s, 1024);
-	printf("rd %d\n", rd);
 	errorfrom(s, ffrom, rd);
 
 	wr = write(fdto, s, rd);
-	printf("wr %d\n", wr);
 	errorto(s, fto, wr);
 	clf = close(fdfrom);
 	clt = close(fdto);
