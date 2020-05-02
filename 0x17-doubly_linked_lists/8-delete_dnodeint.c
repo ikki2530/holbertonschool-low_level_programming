@@ -1,24 +1,5 @@
 #include "lists.h"
 /**
- * dlistint_len - length of a doubly linked list dlistin_t
- * @h: head of the doubly linked list
- * Return: number of elements of the doubly linked list
- */
-size_t dlistint_len(const dlistint_t *h)
-{
-	const dlistint_t *current = h;
-	int lg = 0;
-
-	if (h == NULL)
-		return (lg);
-	while (current)
-	{
-		lg++;
-		current = current->next;
-	}
-	return (lg);
-}
-/**
  * delete_dnodeint_at_index - deletes the node at index of a dlistint_t list.
  * @head: head of the doubly linked list
  * @index: position of the node to be deleted
@@ -29,14 +10,12 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	dlistint_t *temp1, *current;
 	unsigned int pos = 0;
 
-	if (*head == NULL)
+	if (head == NULL || *head == NULL)
 		return (-1);
 	current = *head;
 	if (index == 0)
 	{
-		if (current->next != NULL)
-			(*head) = current->next;
-		(*head)->prev = NULL;
+		(*head) = current->next;
 		free(current);
 		current = NULL;
 		return (1);
