@@ -11,8 +11,6 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *current;
 	int flag = 0;
 
-	if (ht == NULL)
-		return;
 	size = ht->size;
 	current = ht->array[i];
 	printf("{");
