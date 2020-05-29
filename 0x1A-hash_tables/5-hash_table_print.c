@@ -7,7 +7,7 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int size, i = 0;
+	unsigned long int size = 0, i = 0;
 	int flag = 0;
 
 	if (ht == NULL)
@@ -20,7 +20,7 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			if (flag > 0)
 				printf(", ");
-			printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
+			printf("\'%s\': \'%s\'", ht->array[i]->key, ht->array[i]->value);
 			flag++;
 		}
 	}
