@@ -8,8 +8,8 @@
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-        unsigned long int n;
+	unsigned long int n;
 
-        n = hash_djb2(key); /*retorna la posición donde se debe ubicar el string*/
-        return (n % size);
+	n = hash_djb2(key); /*retorna la posición donde se debe ubicar el string*/
+	return (n % size);
 }
