@@ -33,6 +33,9 @@ void hash_table_delete(hash_table_t *ht)
 {
 	unsigned long int sz, i;
 
+	if (ht == NULL)
+		return;
+
 	sz = ht->size;
 
 	for (i = 0; i < sz; i++)
