@@ -84,7 +84,8 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	unsigned long int idx = 0;
 	shash_node_t *current, *new;
 
-	if (ht == NULL || key == NULL || value == NULL)
+	if (ht == NULL || key == NULL ||
+	(strcmp(key, "") == 0) || value == NULL)
 		return (0);
 	idx = key_index((const unsigned char *)key, ht->size);
 	current = ht->array[idx];
