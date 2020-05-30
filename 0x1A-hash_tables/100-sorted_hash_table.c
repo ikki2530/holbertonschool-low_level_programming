@@ -134,7 +134,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 	unsigned long int idx;
 	shash_node_t *current;
 
-	if (ht == NULL || key == NULL)
+	if (ht == NULL || key == NULL || (strcmp(key, "") == 0))
 		return (NULL);
 
 	idx = key_index((const unsigned char *)key, ht->size);
