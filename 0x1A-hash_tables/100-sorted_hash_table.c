@@ -161,6 +161,8 @@ void shash_table_print(const shash_table_t *ht)
 	shash_node_t *current = NULL;
 	int flag = 0;
 
+	if (ht == NULL)
+		return;
 	current = ht->shead;
 
 	printf("{");
@@ -185,6 +187,8 @@ void shash_table_print_rev(const shash_table_t *ht)
 	shash_node_t *current = NULL;
 	int flag = 0;
 
+	if (ht == NULL)
+		return;
 	current = ht->stail;
 
 	printf("{");
@@ -249,4 +253,3 @@ void shash_table_delete(shash_table_t *ht)
 	free(ht->array);
 	free(ht);
 }
-
