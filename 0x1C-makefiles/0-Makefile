@@ -1,0 +1,4 @@
+# Compiling holberton seahorse draw
+
+all: main.c holberton.c
+	gcc main.c holberton.c -o holberton
