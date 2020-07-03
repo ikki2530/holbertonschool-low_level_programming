@@ -1,0 +1,16 @@
+# Compiling holberton seahorse draw
+# cleaning all files generated
+CC = gcc
+SRC = main.c holberton.c
+NAME = holberton
+OBJ = $(SRC:.c=.o)
+RM = rm -f
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+clean:
+	$(RM) *~ $(NAME)
+oclean:
+	$(RM) *.o $(NAME)
+fclean: clean oclean
+re: oclean all
