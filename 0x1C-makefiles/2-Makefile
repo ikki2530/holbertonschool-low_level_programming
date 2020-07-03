@@ -1,10 +1,8 @@
 # Compiling holberton seahorse draw
-# OBJ save the object files
-
 CC = gcc
 SRC = main.c holberton.c
 NAME = holberton
 OBJ = $(SRC:.c=.o)
 
 all: $(OBJ)
-	$(CC) $(OBJ) -o holberton
+	$(CC) $(OBJ) -o NAME
