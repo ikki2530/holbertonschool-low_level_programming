@@ -2,6 +2,14 @@
 
 
 def island_perimeter(grid):
+    """calculate the perimeter of an island
+
+    Args:
+        grid (list): list of lists
+
+    Returns:
+        int: perimeter of the island
+    """
     perim = 0
     unions = 0
     ones = 0
