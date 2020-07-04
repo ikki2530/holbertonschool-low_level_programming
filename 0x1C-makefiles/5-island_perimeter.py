@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""calculate the perimeter of an island"""
 
 
 def island_perimeter(grid):
@@ -32,9 +33,5 @@ def island_perimeter(grid):
                     if row_prev == 1 and current_item == 1:
                         # print(i)
                         unions += 1
-
     perim = (ones * 4) - (unions * 2)
-    # print("unions", unions)
-    # print("ones", ones)
-    # print("perim", perim)
     return perim
