@@ -17,7 +17,7 @@ void print_array(int *array, int l, int r)
 		if (i == r)
 			printf("%d\n", array[i]);
 		else
-			printf("%d ", array[i]);
+			printf("%d, ", array[i]);
 	}
 }
 
